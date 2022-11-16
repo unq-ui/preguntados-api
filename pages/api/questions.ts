@@ -3,16 +3,16 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 
 import questionsData from '../../data/questions';
 import { createQuestion } from '../../data/utils';
-import { ErrorMessage, Question, Level } from '../../types/types';
+import { ErrorMessage, Question, Difficulty } from '../../types/types';
 
 export default function handler( req: NextApiRequest, res: NextApiResponse<Question[] | ErrorMessage> ) {
   if (req.method === 'GET') {
-    const selectedLevel = Object.values(Level).find(level => level === req.query.level) || Level.EASY;
+    const selectedDifficulty = Object.values(Difficulty).find(difficulty => difficulty === req.query.difficulty) || Difficulty.EASY;
     res
       .status(200)
       .json(
         questionsData
-          .filter((question) => question.level === selectedLevel)
+          .filter((question) => question.difficulty === selectedDifficulty)
           .map(createQuestion)
           .sort(() => 0.5 - Math.random())
       );    

@@ -2,8 +2,8 @@ export type ErrorMessage = {
   error: string;
 };
 
-export enum Level {
-  EASY = 'easy',
+export enum Difficulty {
+EASY = 'easy',
   NORMAL = 'normal',
   HARD = 'hard',
   EXTREME = 'extreme',
@@ -17,7 +17,7 @@ export type BackendQuestion = {
   option3: string;
   option4: string;
   answer: string;
-  level: Level;
+  difficulty: Difficulty;
 };
 
 export type Question = {

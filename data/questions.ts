@@ -1,4 +1,4 @@
-import { BackendQuestion, Level } from "../types/types";
+import { BackendQuestion, Difficulty } from "../types/types";
 
 const questionsData: BackendQuestion[] = [
   {
@@ -9,7 +9,7 @@ const questionsData: BackendQuestion[] = [
     option3: "77 km/s per mega parsec",
     option4: "69 km/s per mega parsec",
     answer: "73 km/s per mega parsec",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1ff87d8f42f0017bae7a8",
@@ -19,7 +19,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Rabindranath Tagore",
     option4: "None of these",
     answer: "Rabindranath Tagore",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1fb5dd8f42f0017bae795",
@@ -29,7 +29,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Galileo",
     option4: "Laplace",
     answer: "Einstein",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee201b0d8f42f0017bae7c2",
@@ -39,7 +39,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Kiran Desai",
     option4: "Sashi Tharoor",
     answer: "Kiran Desai",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee20029d8f42f0017bae7b6",
@@ -49,7 +49,7 @@ const questionsData: BackendQuestion[] = [
     option3: "R. K. Laxman",
     option4: "None of these",
     answer: "R. K. Narayan",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee20075d8f42f0017bae7bc",
@@ -59,7 +59,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Kālidāsa",
     option4: "None of these",
     answer: "Valmiki",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1fba3d8f42f0017bae79a",
@@ -70,7 +70,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Jupiter",
     option4: "Saturn",
     answer: "Saturn",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5ee1ffe5d8f42f0017bae7b0",
@@ -80,7 +80,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Five Point Someone",
     option4: "None of these",
     answer: "Five Point Someone",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee20036d8f42f0017bae7b7",
@@ -90,7 +90,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Kiran Desai",
     option4: "None of these",
     answer: "Arundhati Roy",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee1fbb0d8f42f0017bae79b",
@@ -100,7 +100,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Oceans",
     option4: "Mountains",
     answer: "Rocks",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee1fb84d8f42f0017bae798",
@@ -110,7 +110,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Steady state theory",
     option4: "None of the above",
     answer: "Big Bang theory",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee1fafed8f42f0017bae791",
@@ -120,7 +120,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Amal EI-Mohtar",
     option4: "Diksha Basu",
     answer: "Bairaj Khanna",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5ee1ffa5d8f42f0017bae7aa",
@@ -130,7 +130,7 @@ const questionsData: BackendQuestion[] = [
     option3: "18",
     option4: "None of these",
     answer: "18",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee1ffdad8f42f0017bae7af",
@@ -141,7 +141,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Khwaja Ahmed",
     option4: "None of these",
     answer: "Dhanpat Rai Shrivastava",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1fb90d8f42f0017bae799",
@@ -151,7 +151,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Venus",
     option4: "Saturn",
     answer: "Saturn",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee2006bd8f42f0017bae7bb",
@@ -161,7 +161,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Guru Nanak",
     option4: "None of these",
     answer: "Budha",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5ee1fc3ed8f42f0017bae7a2",
@@ -171,7 +171,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Kālidāsa",
     option4: "None of these",
     answer: "Vishnu Sharma",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee1ff97d8f42f0017bae7a9",
@@ -181,7 +181,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Rabindranath Tagore",
     option4: "None of these",
     answer: "Bankim Chandra Chattopadhyay",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1fbcad8f42f0017bae79d",
@@ -191,7 +191,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Sedimentary Rocks",
     option4: "Extrusive igneous rocks",
     answer: "Deep seated Intrusive Igneous",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5edfca9f425f86001761f430",
@@ -201,7 +201,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Parwanoo",
     option4: "Delhi",
     answer: "Shilaroo",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5ee1fc19d8f42f0017bae7a0",
@@ -211,7 +211,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Kolkata",
     option4: "None of these",
     answer: "New Delhi",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5ee1fb69d8f42f0017bae796",
@@ -221,7 +221,7 @@ const questionsData: BackendQuestion[] = [
     option3: "1.5",
     option4: "0.5",
     answer: "0",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee1fc81d8f42f0017bae7a7",
@@ -231,7 +231,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Kālidāsa",
     option4: "None of these",
     answer: "Kālidāsa",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5ee20041d8f42f0017bae7b8",
@@ -241,7 +241,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Amit Chaudhuri",
     option4: "None of these",
     answer: "Gobind Behari Lal",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee1fb3dd8f42f0017bae793",
@@ -252,7 +252,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Sierra Nevada Mountain Range",
     option4: "Alps Mountain range",
     answer: "Sierra Nevada Mountain Range",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee20004d8f42f0017bae7b3",
@@ -262,7 +262,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Ashapoorna Devi",
     option4: "None of these",
     answer: "Ashapoorna Devi",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee200b0d8f42f0017bae7c1",
@@ -273,7 +273,7 @@ const questionsData: BackendQuestion[] = [
     option3: "DNA Test",
     option4: "Genetic Codes",
     answer: "DNA Test",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee1fbe8d8f42f0017bae79f",
@@ -283,7 +283,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Pranab Mukherjee",
     option4: "None of these",
     answer: "A. P. J. Abdul Kalam",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5ee20088d8f42f0017bae7be",
@@ -294,7 +294,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Baseball",
     option4: "Boxing",
     answer: "Boxing",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5ee1fbdad8f42f0017bae79e",
@@ -304,7 +304,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Sedimentary rock",
     option4: "Intrusive igneous rock",
     answer: "Metamorphic rock",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1fb18d8f42f0017bae792",
@@ -315,7 +315,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Mississippi Missouri",
     option4: "Thames",
     answer: "Amazon",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee1fbbdd8f42f0017bae79c",
@@ -326,7 +326,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Sedimentary rocks",
     option4: "None of the above",
     answer: "Metamorphic rocks",
-    level: Level.NORMAL,
+    difficulty: Difficulty.NORMAL,
   },
   {
     _id: "5edfc8690a2f8400175e89a2",
@@ -336,7 +336,7 @@ const questionsData: BackendQuestion[] = [
     option3: "September 27",
     option4: "September 29",
     answer: "September 27",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee2001ed8f42f0017bae7b5",
@@ -346,7 +346,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Vikram Seth",
     option4: "None of these",
     answer: "Vikram Seth",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee20056d8f42f0017bae7b9",
@@ -356,7 +356,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Gitanjali",
     option4: "None of these",
     answer: "Gitanjali",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1fff0d8f42f0017bae7b1",
@@ -366,7 +366,7 @@ const questionsData: BackendQuestion[] = [
     option3: "R. K. Narayan",
     option4: "None of these",
     answer: "Khushwant Singh",
-    level: Level.HARD,
+    difficulty: Difficulty.HARD,
   },
   {
     _id: "5ee1fc74d8f42f0017bae7a6",
@@ -376,7 +376,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Padma Sachdev",
     option4: "None of these",
     answer: "Sithu Yashaschandra",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1ffcfd8f42f0017bae7ae",
@@ -386,7 +386,7 @@ const questionsData: BackendQuestion[] = [
     option3: "In a Free State",
     option4: "None of these",
     answer: "In a Free State",
-    level: Level.EXTREME,
+    difficulty: Difficulty.EXTREME,
   },
   {
     _id: "5ee1fc59d8f42f0017bae7a4",
@@ -396,7 +396,7 @@ const questionsData: BackendQuestion[] = [
     option3: "15 August 1957",
     option4: "None of these",
     answer: "1 August 1957",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
   {
     _id: "5ee1fb4bd8f42f0017bae794",
@@ -406,7 +406,7 @@ const questionsData: BackendQuestion[] = [
     option3: "Oil Palm",
     option4: "Banana",
     answer: "Banana",
-    level: Level.EASY,
+    difficulty: Difficulty.EASY,
   },
 ];
 
