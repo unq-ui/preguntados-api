@@ -5,7 +5,7 @@ import questionsData from '../../data/questions';
 import { getKeyValue } from '../../data/utils';
 import { Answer, ErrorMessage } from '../../types/types';
 
-export default function handler( req: NextApiRequest, res: NextApiResponse<Answer | ErrorMessage> ) {
+function handler(req: NextApiRequest, res: NextApiResponse<Answer | ErrorMessage>) {
   if (req.method === 'POST') {
     const {questionId, option } = req.body;
     if (questionId && option) {
@@ -13,6 +13,7 @@ export default function handler( req: NextApiRequest, res: NextApiResponse<Answe
       if (question) {
         const selectedOption = getKeyValue(question, option);
         if (selectedOption) {
+          res.setHeader('Access-Control-Allow-Origin', '*');
           res
             .status(200)
             .json({ questionId, answer: question.answer === selectedOption });
@@ -29,3 +30,22 @@ export default function handler( req: NextApiRequest, res: NextApiResponse<Answe
     res.status(405).json({ error: "Method not allowed" });
   }  
 }
+
+type HandlerType = (req: NextApiRequest, res: NextApiResponse<Answer | ErrorMessage>) => void;
+
+const allowCors = (fn: HandlerType) => async (req: NextApiRequest, res: NextApiResponse<Answer | ErrorMessage>) => {
+  res.setHeader('Access-Control-Allow-Credentials', 'true')
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  )
+  if (req.method === 'OPTIONS') {
+    res.status(200).end()
+    return
+  }
+  return await fn(req, res)
+}
+
+export default allowCors(handler);
